@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace PokemonRestApi.Repositories
 {
-    public class PokemonsRepositories
+    public class PokemonsRepositories : IPokemonsRepository
     {
         private int _nextID; 
         private List<Pokemon> _pokemons; 
@@ -73,10 +73,5 @@ namespace PokemonRestApi.Repositories
 
           
         }    
-
-        public void Validate()
-        {
-            
-        }
     }
 }
